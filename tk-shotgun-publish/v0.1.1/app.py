@@ -1,7 +1,7 @@
 import os
 import tank
 import sys
-sys.path.insert(0, "E:/miraSG")
+sys.path.insert(0, "Z:/miraSG")
 import miraCore
 from miraLibs.pyLibs import join_path
 from miraLibs.pipeLibs import pipeFile
