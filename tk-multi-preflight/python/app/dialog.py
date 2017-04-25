@@ -40,7 +40,7 @@ class AppDialog(QtGui.QWidget):
         """
         # first, call the base class and let it do its thing.
         super(AppDialog, self).__init__()
-
+        self.resize(420, 600)
         main_layout = QtGui.QHBoxLayout(self)
         main_layout.setContentsMargins(0, 0, 0, 0)
         check_ui = CheckGui(self)
