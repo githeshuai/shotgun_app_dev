@@ -26,7 +26,7 @@ def show_dialog(app_instance):
     
     # we pass the dialog class to this method and leave the actual construction
     # to be carried out by toolkit.
-    app_instance.engine.show_dialog("preflight...", app_instance, AppDialog)
+    app_instance.engine.show_dialog("Preflight...", app_instance, AppDialog)
     
 
 class AppDialog(QtGui.QWidget):
@@ -43,7 +43,7 @@ class AppDialog(QtGui.QWidget):
         self.resize(420, 600)
         main_layout = QtGui.QHBoxLayout(self)
         main_layout.setContentsMargins(0, 0, 0, 0)
-        check_ui = CheckGui(self)
+        check_ui = CheckGui()
         main_layout.addWidget(check_ui)
         # now load in the UI that was created in the UI designer
         
