@@ -43,7 +43,7 @@ class AppDialog(QtGui.QWidget):
 
         main_layout = QtGui.QHBoxLayout(self)
         main_layout.setContentsMargins(0, 0, 0, 0)
-        check_ui = CheckGui()
+        check_ui = CheckGui(self)
         main_layout.addWidget(check_ui)
         # now load in the UI that was created in the UI designer
         
