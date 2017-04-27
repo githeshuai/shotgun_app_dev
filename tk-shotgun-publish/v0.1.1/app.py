@@ -62,7 +62,7 @@ class TaskPublish(tank.platform.Application):
     @staticmethod
     def publish(work_file):
         scripts_dir = miraCore.get_scripts_dir()
-        start_script_path = join_path.join_path2(scripts_dir, "pipeTools", "pipeline", "task_publish", "publish.py")
+        publish_script_path = join_path.join_path2(scripts_dir, "pipeTools", "pipeline", "task_publish", "publish.py")
         obj = pipeFile.PathDetails.parse_path(work_file)
         task_name = get_task_name(obj)
         deadline_job_name = "publish_%s" % task_name
@@ -70,4 +70,4 @@ class TaskPublish(tank.platform.Application):
         argv = work_file
         submitter = u'pipemanager'
         tar_name = u'pipemanager'
-        submit.submit_python_job(deadline_job_name, start_script_path, argv, submitter, tar_name)
+        submit.submit_python_job(deadline_job_name, publish_script_path, argv, submitter, tar_name)
