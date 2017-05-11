@@ -72,7 +72,7 @@ class TaskStart(tank.platform.Application):
     @staticmethod
     def start_from_task_path(work_file):
         pipeline_dir = miraCore.get_pipeline_dir()
-        start_script_path = join_path.join_path2(pipeline_dir, "pipeline", "task_publish", "publish.py")
+        start_script_path = join_path.join_path2(pipeline_dir, "pipeline", "task_start", "start.py")
         obj = pipeFile.PathDetails.parse_path(work_file)
         task_name = get_task_name(obj)
         deadline_job_name = "start_%s" % task_name
