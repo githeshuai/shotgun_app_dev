@@ -10,7 +10,7 @@
 import sgtk
 import sys
 sys.path.insert(0, "Z:/miraSG")
-from miraScripts.pipeTools.pipeline.preflight.check_gui import CheckGui
+from miraPipeline.pipeline.preflight.check_gui import CheckGui
 # by importing QT from sgtk rather than directly, we ensure that
 # the code will be compatible with both PySide and PyQt.
 from sgtk.platform.qt import QtCore, QtGui
